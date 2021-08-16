@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.header {
+  height: 2.5rem;
+  width: 100%;
+  background-color: #1e0c67;
+  font-size: 12px;
+  padding: 2px 37px;
+  display: flex;
+  color: white;
+  font-weight: 700;
+  align-items: center;
+}
+
+.show_btn {
+  background-color: #dad329;
+  padding: 3px 5px;
+  font-weight: 700;
+  border: none;
+  width: 11rem;
+  height: 2rem;
+  letter-spacing: 3px;
+  margin-left: 4%;
+}
+
+p {
+  margin: 0;
+}

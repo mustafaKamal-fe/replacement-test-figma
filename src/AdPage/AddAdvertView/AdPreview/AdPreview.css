@@ -1,0 +1,26 @@
+.radio_input {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form_container {
+  background-color: #ebed93;
+  border: 1px solid #5e5c5c;
+}
+
+.form_container p {
+  color: #4b4b4b;
+  font-weight: 700;
+}
+
+.form_container input {
+    border: 3px solid #C6C6C6;
+}
+
+label {
+  font-weight: 600;
+  font-size: 11px;
+  color: #4b4b4b;
+}

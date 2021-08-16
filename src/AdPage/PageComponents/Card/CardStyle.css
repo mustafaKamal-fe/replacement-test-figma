@@ -1,0 +1,12 @@
+.card_container {
+  background: linear-gradient(
+      216deg,
+      #0b3352 38.34%,
+      rgba(255, 255, 255, 0) 91.93%
+    ),
+    linear-gradient(180.64deg, #231a8c 0.57%, #8e2ebb 76.01%, #8e2ebb 92.02%);
+  color: white;
+  max-height: 300px;
+  margin-bottom: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

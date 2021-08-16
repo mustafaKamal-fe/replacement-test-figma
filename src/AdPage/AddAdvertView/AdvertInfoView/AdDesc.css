@@ -1,0 +1,56 @@
+.add_desc {
+  display: flex;
+  align-items: center;
+}
+
+.add_desc i {
+  background: url("../../../assests/images/add_icon.png") no-repeat;
+  background-size: contain;
+  height: 18px;
+  width: 18px;
+  display: block;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.input_filed {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 90%;
+}
+
+.add_img_container h4 {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.add_img_container p {
+  font-size: 10px;
+}
+
+.upload_img i {
+  background: url("../../../assests/images/add_a_photo.png") no-repeat;
+  background-size: contain;
+  height: 22px;
+  width: 22px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.img_container {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0 0 0 /20%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.img_thum {
+  left: 2px;
+  height: 80px;
+  width: 100%;
+}

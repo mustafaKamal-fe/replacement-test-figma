@@ -1,55 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from "react";
+import "./App.css";
+import MainPage from "./AdPage/MainPage";
+import HousesListLayout from "./Layout/HousesListLayout";
 
 function App() {
-	// Example of how to fetch one card
-	useEffect(() => {
-		fetch('/card', { method: 'GET' })
-			.then((res) => {
-				return res.json();
-			})
-			.then((data) => {
-				// handle payload
-				console.log(data);
-			})
-			.catch((err) => {
-				// handle errors
-				console.log(err);
-			});
-	});
-	// Example of how to fetch many cards
-	useEffect(() => {
-		fetch('/cards', { method: 'GET' })
-			.then((res) => {
-				return res.json();
-			})
-			.then((data) => {
-				// handle payload
-				console.log(data);
-			})
-			.catch((err) => {
-				// handle errors
-				console.log(err);
-			});
-	});
-	return (
-		<div className='App'>
-			<header className='App-header'>
-				<img src={logo} className='App-logo' alt='logo' />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className='App-link'
-					href='https://reactjs.org'
-					target='_blank'
-					rel='noopener noreferrer'>
-					Learn React
-				</a>
-			</header>
-		</div>
-	);
+  const [houses, setHouses] = useState([]);
+
+  // Fetch many cards
+  useEffect(() => {
+    fetch("/cards", { method: "GET" })
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        const { cards } = data;
+        setHouses(cards);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+  return (
+    <div className="main_container">
+      {/*_______ Houses List Page ________ */}
+      <HousesListLayout houses={houses} />;
+      {/*__________ Add Advert Page  __________*/}
+      <MainPage />
+    </div>
+  );
 }
 
 export default App;

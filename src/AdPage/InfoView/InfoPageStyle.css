@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.head_container {
+  display: flex;
+  align-items: center;
+  background-color: #0b3352;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 10px;
+}
+
+.head_container p {
+  margin: 5px 10px;
+}
+
+.info_icon {
+  background: url("../../assests/images/info_icon.png") no-repeat;
+  background-size: contain;
+  height: 25px;
+  width: 25px;
+  display: block;
+}
+
+.body_info_container {
+  background-color: #ebed93;
+  padding: 23px 28px;
+  height: 100vh;
+  margin-bottom: 40px;
+}
+
+.body_info_container h4 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.body_info_container p {
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.info_block:not(:first-child) {
+  margin-top: 32px;
+}
+
+.info_card {
+  width: 100%;
+  height: 244px;
+
+  background: linear-gradient(
+      216deg,
+      #0b3352 38.34%,
+      rgba(255, 255, 255, 0) 91.93%
+    ),
+    linear-gradient(180.64deg, #231a8c 0.57%, #8e2ebb 76.01%, #8e2ebb 92.02%);
+
+  color: white;
+  margin-top: 34px;
+}
+
+.img_computer {
+  height: 184px;
+  width: 100%;
+}
+
+.card_desc p {
+  font-weight: 600;
+  margin: 0;
+  margin-top: 13px;
+}
+
+.main_grid {
+  border-bottom: 1px solid white;
+  padding: 3px;
+}
+
+.owner_info {
+  padding: 2px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.owner_info i {
+  background: url("../../assests/images/owner_icon.png") no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 35px;
+  display: block;
+  margin-top: 3px;
+}
+
+.owner_info img {
+  background-image: url("../../assests/images/person.png");
+  height: 30px;
+  width: 30px;
+}
+
+.owner_info p {
+  flex-grow: 1;
+  font-weight: 700;
+}

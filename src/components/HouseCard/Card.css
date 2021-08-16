@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+body {
+  font-size: 11px;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.house_img_container {
+  border-radius: 10px;
+  position: relative;
+
+  height: 84px;
+  width: 107px;
+}
+.house_img {
+  border-radius: 10px;
+  height: 84px;
+  width: 107px;
+  background-color: #0a3e66;
+}
+
+.heart_icon {
+  background: url("../../assests/images/heart_icon.png") no-repeat;
+  background-size: contain;
+  height: 15px;
+  width: 15px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+}
+
+.house_number {
+  width: 21px;
+  height: 13px;
+  background-color: #1e4874;
+  font-size: 10px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 5px;
+  left: 4px;
+  color: white;
+  padding-left: 5px;
+}
+
+img {
+  border-radius: 10px;
+  height: 84px;
+  width: 107px;
+
+  background-image: url("../../assests/images/house_q.png") no-repeat;
+  background-size: cover;
+}
+
+.main_content {
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  height: 9rem;
+  padding: 3px;
+  position: relative;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+}
+
+.main_infos p {
+  margin: 0;
+  font-weight: 700;
+}
+.main_infos p:not(:first-child) {
+  font-weight: 400;
+}
+
+.other_infos p {
+  align-self: flex-end;
+}
+.title {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+
+.urgent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c00a09;
+  width: 67px;
+  margin: 10px 0;
+}
+.urgent p {
+  color: white;
+  font-weight: 900;
+  font-size: 12px;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+}
+.main_infos {
+  display: flex;
+  flex-direction: column;
+}
+.main_infos p:nth-child(2) {
+  margin: 2px 0;
+}
+.other_infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.test {
+  background: url("../../assests/images/kitchenIcon2.png") no-repeat;
+  background-size: contain;
+  height: 16px;
+  width: 16px;
+  display: block;
+}
+
+p {
+  display: flex;
+  align-items: center;
+}
+
+.icons_infos i {
+  margin-left: 6px;
+}
+.icons_infos {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.shower {
+  background: url("../../assests/images/shower.png") no-repeat;
+  background-size: contain;
+  height: 19px;
+  width: 19px;
+  display: block;
+}
+.sofa {
+  background: url("../../assests/images/sofa.png") no-repeat;
+  background-size: contain;
+  height: 18px;
+  width: 17px;
+  display: block;
+}
+.bed {
+  background: url("../../assests/images/sofa.png") no-repeat;
+  background-size: contain;
+  height: 16px;
+  width: 15px;
+  display: block;
+}
+
+.price {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 12px;
+  color: #0b3e74;
+  font-weight: 700;
+}
+
+.owner {
+  position: absolute;
+  bottom: 4px;
+  left: 7px;
+}
+
+.owner_name {
+  font-weight: 700;
+  font-size: 9px;
+}
+
+.o_icon {
+  background: url("../../assests/images/owner_icon.png") no-repeat;
+  background-size: contain;
+  height: 15px;
+  width: 20px;
+  display: block;
+  margin-left: 25%;
+}
+
+.clip {
+  height: 26px;
+  width: 70%;
+  background-color: #0a3e66;
+  margin-bottom: -3px;
+  clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  bottom: 2px;
+  right: -2px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+
+  border-bottom-right-radius: 9px;
+}
+
+.clip p {
+  color: white;
+  font-weight: 600;
+  font-size: 9px;
+  margin-left: 6px;
+  margin-top: 5px;
+}
+
+.location {
+  background: url("../../assests/images/location_icon.png") no-repeat;
+  background-size: contain;
+  height: 12px;
+  width: 8px;
+  display: block;
+  margin-left: 2px;
+}
+
+.main_container {
+  padding: 10%;
+}
+
+.mb--2 {
+  margin-top: 12px;
+}
