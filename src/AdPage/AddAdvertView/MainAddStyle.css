@@ -1,0 +1,44 @@
+@media (max-width: 952px) {
+  .add_container {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 470px) {
+  .add_container {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 388px) {
+  .add_container {
+    margin-top: 190px;
+  }
+}
+
+@media (max-width: 376px) {
+  .add_container {
+    margin-top: 240px;
+  }
+}
+
+@media (max-width: 370px) {
+  .add_container {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 335px) {
+  .add_container {
+    margin-top: 400px;
+  }
+}
+.desc_container {
+  padding: 23px 28px;
+}
+
+@media (max-width: 900px) {
+  .desc_container {
+    padding: 23px 0;
+  }
+}

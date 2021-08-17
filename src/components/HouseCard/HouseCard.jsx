@@ -28,11 +28,9 @@ const HouseCard = ({ house }) => {
               </div>
             </div>
             <div className="icons_infos">
-              <div className="icons">
-                <p>
-                  {house?.nofBedrooms} <i className="test"></i>
-                </p>
-              </div>
+              <p className="icons">
+                {house?.nofBedrooms} <i className="test"></i>
+              </p>
 
               <div className="icons">
                 <p>

@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="main_container">
       {/*_______ Houses List Page ________ */}
-      <HousesListLayout houses={houses} />;
+      {/* <HousesListLayout houses={houses} />; */}
       {/*__________ Add Advert Page  __________*/}
       <MainPage />
     </div>

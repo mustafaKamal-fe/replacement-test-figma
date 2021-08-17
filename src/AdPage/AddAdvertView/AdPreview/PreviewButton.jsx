@@ -3,7 +3,7 @@ const PreviewButton = () => {
     <button
       style={{
         fontWeight: "700",
-        padding: "5px 20px",
+        padding: "5px 26px",
         backgroundColor: "#09315B",
         color: "white",
         border: "none",

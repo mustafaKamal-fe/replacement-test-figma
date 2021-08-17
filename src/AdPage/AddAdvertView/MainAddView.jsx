@@ -3,20 +3,24 @@ import Header from "../PageComponents/Header/Header";
 import AdPreview from "./AdPreview/AdPreview";
 import AddDesc from "./AdvertInfoView/MainAddView";
 import ApproveAd from "./ApproveView/ApproveAd";
-
+import "./MainAddStyle.css";
 const AdHomePage = () => {
   return (
-    <Grid container>
+    <Grid container className="add_container">
       <Header label="ADD  Your (  NEW HomePage Advertisement ) " />
 
       {/* <Add Advert Info/> */}
-      <Grid item xs={12} style={{ padding: "23px 28px" }}>
-        <AddDesc />
+      <Grid item xs={12}>
+        <div className="desc_container">
+          <AddDesc />
+        </div>
       </Grid>
 
       {/* <Preview/> */}
-      <Grid item xs={12} style={{ padding: "23px 28px" }}>
-        <AdPreview />
+      <Grid item xs={12}>
+        <div className="desc_container">
+          <AdPreview />
+        </div>
       </Grid>
 
       {/* <Approve/> */}

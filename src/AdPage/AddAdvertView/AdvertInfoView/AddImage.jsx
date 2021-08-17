@@ -10,24 +10,29 @@ const AddImage = () => {
   };
   return (
     <Grid container spacing={2} className="add_img_container">
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <h4>Add image</h4>
         <p>Upload slideshow images with preferred dimension xxxx px</p>
       </Grid>
-      <Grid item xs={6} className="upload_img">
-        <div>
+      <Grid
+        item
+        xs={8}
+        sm={6}
+        style={{ margin: "0 auto" }}
+        className="upload_img"
+      >
+        <div className="upload_container">
           <div className="img_container">
-            <label>
-              <i></i>
-              <input
-                style={{ display: "none" }}
-                type="file"
-                onChange={imageUploaded}
-              />
-            </label>
-
             <img className="img_thum" src={imageUrl} />
           </div>
+          <label>
+            <i></i>
+            <input
+              style={{ display: "none" }}
+              type="file"
+              onChange={imageUploaded}
+            />
+          </label>
         </div>
       </Grid>
     </Grid>

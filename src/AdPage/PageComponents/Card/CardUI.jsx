@@ -30,6 +30,7 @@ const CardUI = () => {
               marginTop: "3px",
               fontWeight: 600,
               fontSize: 11,
+              padding: "0 10px",
             }}
           >
             Descriptio of 120 Letters , wil lbe enput in the next page

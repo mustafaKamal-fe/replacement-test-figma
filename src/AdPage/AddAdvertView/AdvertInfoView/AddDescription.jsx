@@ -28,6 +28,7 @@ const AddDescription = () => {
             variant="outlined"
             fullWidth
           />
+          <p style={{ alignSelf: "flex-end", opacity: 0.8 }}>max 120 letters</p>
         </div>
       )}
     </div>

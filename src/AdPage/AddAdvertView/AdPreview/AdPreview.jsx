@@ -31,18 +31,26 @@ const AdPreview = () => {
         </Grid>
         <Grid item xs={12}>
           <form className="radio_input">
-            <input type="radio" id="html" name="fav_language" value="HTML" />
-            <label for="html"> 30 day ( $100.00 ) </label>
-
-            <input type="radio" id="css" name="fav_language" value="CSS" />
-            <label for="css">180 day ( $150.00 ) </label>
-            <input
-              type="radio"
-              id="javascript"
-              name="fav_language"
-              value="JavaScript"
-            />
-            <label for="javascript">360 day ( $200.00 ) </label>
+            <Grid container spacing={3}>
+              <Grid style={{ display: "flex" }} item xs={12} sm={4}>
+                <input type="radio" id="day30" name="plan30" value="day30" />
+                <label style={{ marginLeft: 4 }} for="html">
+                  30 day ( $100.00 )
+                </label>
+              </Grid>
+              <Grid style={{ display: "flex" }} xs={12} item sm={4}>
+                <input type="radio" id="day180" name="day180" value="day180" />
+                <label style={{ marginLeft: 4 }} for="day180">
+                  180 day ( $150.00 )
+                </label>
+              </Grid>
+              <Grid style={{ display: "flex" }} xs={12} item sm={4}>
+                <input type="radio" id="day360" name="day360" value="day360" />
+                <label style={{ marginLeft: 4 }} for="day360">
+                  360 day ( $200.00 ){" "}
+                </label>
+              </Grid>
+            </Grid>
           </form>
         </Grid>
       </Grid>

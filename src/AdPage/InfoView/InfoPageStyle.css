@@ -26,8 +26,8 @@
 .body_info_container {
   background-color: #ebed93;
   padding: 23px 28px;
-  height: 100vh;
-  margin-bottom: 40px;
+  /* min-height: 100vh; */
+  /* margin-bottom: 40px; */
 }
 
 .body_info_container h4 {
