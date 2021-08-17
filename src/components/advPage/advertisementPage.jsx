@@ -3,16 +3,15 @@ import AddAdv from "./addAdv";
 import { Row, Col } from "antd";
 const AdvertisementPage = () => {
   return (
-    <div className="container advPage">
-      <Row>
-        <Col xs={2} sm={4} md={6} lg={8} xl={10}>
+    <div className="Container">
+      <Row gutter={[8, 16]} justify="space-around">
+        <Col sm={24} lg={8}>
           <HomeAdv />
         </Col>
-        <Col xs={2} sm={4} md={6} lg={8} xl={10}>
+        <Col sm={24} lg={14}>
           <AddAdv />
         </Col>
       </Row>
-      ,
     </div>
   );
 };
