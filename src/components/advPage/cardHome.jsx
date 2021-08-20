@@ -3,15 +3,15 @@ const CardHome = () => {
   return (
     <div className="containerCardHome">
       <div>
-        <Row gutter={[8, 8]} justify="start">
-          <Col span={12}>
+        <Row gutter={[48, 16]}>
+          <Col xl={10} lg={12}>
             <img
               src="/img/Rectangle 4767.png"
               alt="Rectangle"
               className="card-img"
             />
           </Col>
-          <Col span={12}>
+          <Col xl={14} lg={12}>
             <div className="Description">
               Description of 120 Letters , wil lbe enput in the next page
             </div>

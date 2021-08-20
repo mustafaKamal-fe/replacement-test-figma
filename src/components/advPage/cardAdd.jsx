@@ -2,15 +2,15 @@ import { Col, Row } from "antd";
 const CardAdd = () => {
   return (
     <div className="containerCardHome">
-      <Row>
-        <Col sm={12}>
+      <Row gutter={[48, 16]}>
+        <Col xl={10} lg={12}>
           <img
             src="/img/Rectangle 4767.png"
             alt="Rectangle"
             className="card-img"
           />
         </Col>
-        <Col sm={12}>
+        <Col xl={14} lg={12}>
           <div className="Description">
             ( 120 Letter ) : i.e. ( We have a Good Opportunity for flats for
             sale in Baghdad for new married persons with a good prices you can

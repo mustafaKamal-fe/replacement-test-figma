@@ -26,7 +26,7 @@ const AddAdv = () => {
         <div className="navTitle">ADD Your ( NEW HomePage Advertisement )</div>
       </div>
       <div className="container-home">
-        <Row gutter={[8, 16]}>
+        <Row gutter={[16, 16]}>
           <Col xs={24} sm={12}>
             <div className="addDes">
               <div className="title">Add Description</div>
@@ -43,13 +43,13 @@ const AddAdv = () => {
             <div className="addImg">
               <div className="title"> Add Image</div>
               <Row gutter={[8, 16]}>
-                <Col xs={24} md={12}>
+                <Col xs={24} sm={10} md={12}>
                   <p className="imgdes">
                     Upload slideshow images with preferred dimension xxxx px
                   </p>
                 </Col>
 
-                <Col xs={24} md={12}>
+                <Col xs={24} sm={14} md={12}>
                   <div className="divimgUpload">
                     <img
                       src="/img/decor.png"
@@ -57,20 +57,20 @@ const AddAdv = () => {
                       className="imgUpload"
                       id="img"
                     />
+                    <label>
+                      <img
+                        src="/img/add_a_photo.png"
+                        alt="addImg"
+                        className="addimg"
+                      />
+                      <input
+                        type="file"
+                        id="my_file"
+                        style={{ display: "none" }}
+                        onChange={previewFile}
+                      />
+                    </label>
                   </div>
-                  <label>
-                    <img
-                      src="/img/add_a_photo.png"
-                      alt="addImg"
-                      className="addimg"
-                    />
-                    <input
-                      type="file"
-                      id="my_file"
-                      style={{ display: "none" }}
-                      onChange={previewFile}
-                    />
-                  </label>
                 </Col>
               </Row>
             </div>
@@ -79,19 +79,20 @@ const AddAdv = () => {
       </div>
       <div className="hr hrmarg" />
       <div className="container-home">
-        <Row gutter={[8, 8]}>
-          <Col sm={24} md={10}>
+        <Row gutter={[16, 16]}>
+          <Col md={10} xs={24} lg={11}>
             <button className="btnPre">Preview</button>
           </Col>
-          <Col sm={24} md={14}>
+          <Col md={14} xs={24} lg={13}>
             <CardAdd />
           </Col>
-
+        </Row>
+        <Row>
           <div className="addPlan">
             <p>Add Plan</p>
             <div className="rideoBtn">
-              <Row justify="space-between" align="middle">
-                <Col xs={24} sm={8}>
+              <Row gutter={[16, 16]}>
+                <Col xs={24} sm={8} className="radio-element">
                   <input
                     type="radio"
                     value="30 day ( $100.00 ) "
@@ -100,7 +101,7 @@ const AddAdv = () => {
                   />
                   30 day ( $100.00 )
                 </Col>
-                <Col xs={24} sm={8}>
+                <Col xs={24} sm={8} className="radio-element">
                   <input
                     type="radio"
                     value="180 day ( $150.00 ) "
@@ -109,7 +110,7 @@ const AddAdv = () => {
                   />
                   180 day ( $150.00 )
                 </Col>
-                <Col xs={24} sm={8}>
+                <Col xs={24} sm={8} className="radio-element">
                   <input
                     type="radio"
                     value="360 day ( $200.00 ) "
@@ -126,18 +127,16 @@ const AddAdv = () => {
       <div className="hr hrmarg" />
       <div className="container-home">
         <div className="footerAdd">
-          <Row gutter={[8, 8]}>
-            <Col sm={24} lg={12}>
+          <Row gutter={[48, 16]}>
+            <Col sm={24} md={10} lg={10} xl={12}>
               <p>
                 cLICK “Approve and pay” TO SAVE CANGES AND GO TO THE payment
                 step
               </p>
             </Col>
-            <Col sm={24} lg={12}>
-              <div className="btnsSubmit">
-                <button className="cancel">CANCEL</button>
-                <button className="pay">Approve & Pay</button>
-              </div>
+            <Col sm={24} md={14} lg={14} xl={12}>
+              <button className="cancel">CANCEL</button>
+              <button className="pay">Approve & Pay</button>
             </Col>
           </Row>
         </div>
